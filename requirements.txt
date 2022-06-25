@@ -1,0 +1,6 @@
+numpy
+numba
+stingray
+matplotlib
+scipy
+jupyter
