@@ -1,6 +1,7 @@
 # Epoch Folding
 
 [![codeastro](https://img.shields.io/badge/Made%20at-Code/Astro-blueviolet.svg)](https://semaphorep.github.io/codeastro/)
+[![Read the Docs](https://img.shields.io/readthedocs/efsearch)](https://efsearch.readthedocs.io/en/latest/)
 
 A python script to find the time period of a given time series data
 
