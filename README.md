@@ -1,5 +1,7 @@
 # Epoch Folding
 
+[![codeastro](https://img.shields.io/badge/Made%20at-Code/Astro-blueviolet.svg)](https://semaphorep.github.io/codeastro/)
+
 A python script to find the time period of a given time series data
 
 ## Algorithm 
@@ -13,7 +15,33 @@ where $O_i$ is observed number of photons in $i$-th bin, $E_i=N/n$ is expected f
 
 If $\chi^2$ is big we expect to see periodicity in data.
 
-![alt text](./pics/ef.png)
+Below you can see an example of folding with correct and wrong period.
+
+![alt text](./pics/ef_xkcd.png)
+
+## Installation
+
+```bash
+pip install git+https://github.com/maksatsat/efsearch.git
+```
+
+## Example
+
+```python
+from efsearch.ef_search import search, periodic_generator
+```
+
+Generating periodic data with period=30:
+
+ ```python
+times = periodic_generator(period=30, obs_length =1000, mean_countrate=50)
+```
+Calculating chi2 statistics for periods from 10 to 50 seconds  and plotting the results:
+ ```python
+periods, chi2 = search(times, 10, 50)
+plt.plot(periods, chi2)
+```
+![alt text](./pics/periodogram.png)
 
 ## References:
 
