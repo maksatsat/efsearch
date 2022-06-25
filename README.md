@@ -37,14 +37,14 @@ from efsearch.ef_search import search, periodic_generator
 Generating periodic data with period=30:
 
  ```python
-times = periodic_generator(period=30, obs_length =1000, mean_countrate=50)
+times = periodic_generator(period= 42, obs_length = 1000, mean_countrate = 50, pulsed_fraction = 1.0)
 ```
 Calculating chi2 statistics for periods from 10 to 50 seconds  and plotting the results:
  ```python
-periods, chi2 = search(times, 10, 50)
+periods, chi2 = search(times, 30, 70)
 plt.plot(periods, chi2)
 ```
-![alt text](./pics/periodogram.png)
+![alt text](./pics/periodogram42.png) 
 
 ## References:
 
