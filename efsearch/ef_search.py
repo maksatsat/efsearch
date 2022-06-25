@@ -30,7 +30,7 @@ def search(times, period_min, period_max, nbins=20, nperiods=1000):
 def _sinusoid(times, frequency, baseline, amplitude, phase):
         return baseline + amplitude * np.sin(2 * np.pi * (frequency * times + phase))
 
-def periodic_generator(period=50, obs_length = 1000, mean_countrate = 1, pulsed_fraction = 1.0, ):
+def periodic_generator(period=50, obs_length = 1000, mean_countrate = 10, pulsed_fraction = 1.0):
     """
     Periodic events generator
 
