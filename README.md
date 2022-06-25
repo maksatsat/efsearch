@@ -13,6 +13,7 @@ where $O_i$ is observed number of photons in $i$-th bin, $E_i=N/n$ is expected f
 
 If $\chi^2$ is big we expect to see periodicity in data.
 
+![alt text](./pics/ef.png)
 
 ## References:
 
