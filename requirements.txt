@@ -3,4 +3,3 @@ numba
 stingray
 matplotlib
 scipy
-jupyter
