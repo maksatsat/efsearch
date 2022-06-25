@@ -42,7 +42,8 @@ times = periodic_generator(period= 42, obs_length = 1000, mean_countrate = 50, p
 Calculating chi2 statistics for periods from 10 to 50 seconds  and plotting the results:
  ```python
 periods, chi2 = search(times, 30, 70)
-plt.plot(periods, chi2)
+with plt.xkcd():
+    plt.plot(periods, chi2)
 ```
 ![alt text](./pics/periodogram42.png) 
 
