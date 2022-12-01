@@ -12,7 +12,7 @@ Photon arrival times $t_k$ (total number of photons $N$) are divided into $n$ ph
 
 To compare the $\chi^2$- statistics is calculated.
 
-$\displaystyle \chi^2=\sum_{i=1}^n\cfrac{(O_i-E_i)^2}{E_i^2}$,
+$\displaystyle \chi^2=\sum_{i=1}^n\cfrac{(O_i-E_i)^2}{E_i}$,
 
 where $O_i$ is observed number of photons in $i$-th bin, $E_i=N/n$ is expected from uniform distribution number of photons.
 
